@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+
+	<title>File libs/Drewm/MailChimp.php</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-Drewm.html">
+						Drewm					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.html">
+						IBase<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-IBase.DAO.html">
+						DAO					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Drewm.MailChimp.html">Drewm\MailChimp</a></li>
+				<li><a href="class-EasyPeasyICS.html">EasyPeasyICS</a></li>
+				<li><a href="class-IBase.DAO.DAOFactory.html">IBase\DAO\DAOFactory</a></li>
+				<li><a href="class-IBase.DAO.DAOMailingListMailChimp.html">IBase\DAO\DAOMailingListMailChimp</a></li>
+				<li><a href="class-IBase.DAO.DAOSubscriberMsSQL.html">IBase\DAO\DAOSubscriberMsSQL</a></li>
+				<li><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a></li>
+				<li><a href="class-ntlm_sasl_client_class.html">ntlm_sasl_client_class</a></li>
+				<li><a href="class-PHPMailer.html">PHPMailer</a></li>
+				<li><a href="class-PHPMailerLangTest.html">PHPMailerLangTest</a></li>
+				<li><a href="class-PHPMailerTest.html">PHPMailerTest</a></li>
+				<li><a href="class-POP3.html">POP3</a></li>
+				<li><a href="class-SMTP.html">SMTP</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-IBase.DAO.DAOMailingListInterface.html">IBase\DAO\DAOMailingListInterface</a></li>
+				<li><a href="class-IBase.DAO.DAOSubscriberInterface.html">IBase\DAO\DAOSubscriberInterface</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-phpmailerException.html">phpmailerException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-__autoload.html">__autoload</a></li>
+				<li><a href="function-callbackAction.html">callbackAction</a></li>
+				<li><a href="function-cleanEmails.html">cleanEmails</a></li>
+				<li><a href="function-HTMLFilter.html">HTMLFilter</a></li>
+				<li><a href="function-ibaseAutoload.html" class="invalid">ibaseAutoload</a></li>
+				<li><a href="function-PHPMailerAutoload.html">PHPMailerAutoload</a></li>
+				<li><a href="function-sendEmail.html">sendEmail</a></li>
+				<li><a href="function-tln_body2div.html">tln_body2div</a></li>
+				<li><a href="function-tln_casenormalize.html">tln_casenormalize</a></li>
+				<li><a href="function-tln_deent.html">tln_deent</a></li>
+				<li><a href="function-tln_defang.html">tln_defang</a></li>
+				<li><a href="function-tln_findnxreg.html">tln_findnxreg</a></li>
+				<li><a href="function-tln_findnxstr.html">tln_findnxstr</a></li>
+				<li><a href="function-tln_fixatts.html">tln_fixatts</a></li>
+				<li><a href="function-tln_fixstyle.html">tln_fixstyle</a></li>
+				<li><a href="function-tln_fixurl.html">tln_fixurl</a></li>
+				<li><a href="function-tln_getnxtag.html">tln_getnxtag</a></li>
+				<li><a href="function-tln_sanitize.html">tln_sanitize</a></li>
+				<li><a href="function-tln_skipspace.html">tln_skipspace</a></li>
+				<li><a href="function-tln_tagprint.html">tln_tagprint</a></li>
+				<li><a href="function-tln_unspace.html">tln_unspace</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+<span>Namespace</span>			</li>
+			<li>
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a href="#2"> 2: </a>
+</span><span id="3" class="l"><a href="#3"> 3: </a><span class="php-keyword1">namespace</span> Drewm;
+</span><span id="4" class="l"><a href="#4"> 4: </a>
+</span><span id="5" class="l"><a href="#5"> 5: </a><span class="php-comment">/**
+</span></span><span id="6" class="l"><a href="#6"> 6: </a><span class="php-comment"> * Super-simple, minimum abstraction MailChimp API v2 wrapper
+</span></span><span id="7" class="l"><a href="#7"> 7: </a><span class="php-comment"> * 
+</span></span><span id="8" class="l"><a href="#8"> 8: </a><span class="php-comment"> * Uses curl if available, falls back to file_get_contents and HTTP stream.
+</span></span><span id="9" class="l"><a href="#9"> 9: </a><span class="php-comment"> * This probably has more comments than code.
+</span></span><span id="10" class="l"><a href="#10">10: </a><span class="php-comment"> *
+</span></span><span id="11" class="l"><a href="#11">11: </a><span class="php-comment"> * Contributors:
+</span></span><span id="12" class="l"><a href="#12">12: </a><span class="php-comment"> * Michael Minor &lt;me@pixelbacon.com&gt;
+</span></span><span id="13" class="l"><a href="#13">13: </a><span class="php-comment"> * Lorna Jane Mitchell, github.com/lornajane
+</span></span><span id="14" class="l"><a href="#14">14: </a><span class="php-comment"> * 
+</span></span><span id="15" class="l"><a href="#15">15: </a><span class="php-comment"> * @author Drew McLellan &lt;drew.mclellan@gmail.com&gt; 
+</span></span><span id="16" class="l"><a href="#16">16: </a><span class="php-comment"> * @version 1.1.1
+</span></span><span id="17" class="l"><a href="#17">17: </a><span class="php-comment"> */</span>
+</span><span id="18" class="l"><a href="#18">18: </a><span class="php-keyword1">class</span> MailChimp
+</span><span id="19" class="l"><a href="#19">19: </a>{
+</span><span id="20" class="l"><a href="#20">20: </a>    <span class="php-keyword1">private</span> <span class="php-var">$api_key</span>;
+</span><span id="21" class="l"><a href="#21">21: </a>    <span class="php-keyword1">private</span> <span class="php-var">$api_endpoint</span> = <span class="php-quote">'https://&lt;dc&gt;.api.mailchimp.com/2.0'</span>;
+</span><span id="22" class="l"><a href="#22">22: </a>    <span class="php-keyword1">private</span> <span class="php-var">$verify_ssl</span>   = <span class="php-keyword1">false</span>;
+</span><span id="23" class="l"><a href="#23">23: </a>
+</span><span id="24" class="l"><a href="#24">24: </a>    <span class="php-comment">/**
+</span></span><span id="25" class="l"><a href="#25">25: </a><span class="php-comment">     * Create a new instance
+</span></span><span id="26" class="l"><a href="#26">26: </a><span class="php-comment">     * @param string $api_key Your MailChimp API key
+</span></span><span id="27" class="l"><a href="#27">27: </a><span class="php-comment">     */</span>
+</span><span id="28" class="l"><a href="#28">28: </a>    <span class="php-keyword1">function</span> __construct(<span class="php-var">$api_key</span>)
+</span><span id="29" class="l"><a href="#29">29: </a>    {
+</span><span id="30" class="l"><a href="#30">30: </a>        <span class="php-var">$this</span>-&gt;api_key = <span class="php-var">$api_key</span>;
+</span><span id="31" class="l"><a href="#31">31: </a>        <span class="php-keyword1">list</span>(, <span class="php-var">$datacentre</span>) = <span class="php-keyword2">explode</span>(<span class="php-quote">'-'</span>, <span class="php-var">$this</span>-&gt;api_key);
+</span><span id="32" class="l"><a href="#32">32: </a>        <span class="php-var">$this</span>-&gt;api_endpoint = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'&lt;dc&gt;'</span>, <span class="php-var">$datacentre</span>, <span class="php-var">$this</span>-&gt;api_endpoint);
+</span><span id="33" class="l"><a href="#33">33: </a>    }
+</span><span id="34" class="l"><a href="#34">34: </a>
+</span><span id="35" class="l"><a href="#35">35: </a>    <span class="php-comment">/**
+</span></span><span id="36" class="l"><a href="#36">36: </a><span class="php-comment">     * Call an API method. Every request needs the API key, so that is added automatically -- you don't need to pass it in.
+</span></span><span id="37" class="l"><a href="#37">37: </a><span class="php-comment">     * @param  string $method The API method to call, e.g. 'lists/list'
+</span></span><span id="38" class="l"><a href="#38">38: </a><span class="php-comment">     * @param  array  $args   An array of arguments to pass to the method. Will be json-encoded for you.
+</span></span><span id="39" class="l"><a href="#39">39: </a><span class="php-comment">     * @return array          Associative array of json decoded API response.
+</span></span><span id="40" class="l"><a href="#40">40: </a><span class="php-comment">     */</span>
+</span><span id="41" class="l"><a href="#41">41: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> call(<span class="php-var">$method</span>, <span class="php-var">$args</span>=<span class="php-keyword1">array</span>(), <span class="php-var">$timeout</span> = <span class="php-num">10</span>)
+</span><span id="42" class="l"><a href="#42">42: </a>    {
+</span><span id="43" class="l"><a href="#43">43: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;makeRequest(<span class="php-var">$method</span>, <span class="php-var">$args</span>, <span class="php-var">$timeout</span>);
+</span><span id="44" class="l"><a href="#44">44: </a>    }
+</span><span id="45" class="l"><a href="#45">45: </a>
+</span><span id="46" class="l"><a href="#46">46: </a>    <span class="php-comment">/**
+</span></span><span id="47" class="l"><a href="#47">47: </a><span class="php-comment">     * Performs the underlying HTTP request. Not very exciting
+</span></span><span id="48" class="l"><a href="#48">48: </a><span class="php-comment">     * @param  string $method The API method to be called
+</span></span><span id="49" class="l"><a href="#49">49: </a><span class="php-comment">     * @param  array  $args   Assoc array of parameters to be passed
+</span></span><span id="50" class="l"><a href="#50">50: </a><span class="php-comment">     * @return array          Assoc array of decoded result
+</span></span><span id="51" class="l"><a href="#51">51: </a><span class="php-comment">     */</span>
+</span><span id="52" class="l"><a href="#52">52: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> makeRequest(<span class="php-var">$method</span>, <span class="php-var">$args</span>=<span class="php-keyword1">array</span>(), <span class="php-var">$timeout</span> = <span class="php-num">10</span>)
+</span><span id="53" class="l"><a href="#53">53: </a>    {      
+</span><span id="54" class="l"><a href="#54">54: </a>        <span class="php-var">$args</span>[<span class="php-quote">'apikey'</span>] = <span class="php-var">$this</span>-&gt;api_key;
+</span><span id="55" class="l"><a href="#55">55: </a>
+</span><span id="56" class="l"><a href="#56">56: </a>        <span class="php-var">$url</span> = <span class="php-var">$this</span>-&gt;api_endpoint.<span class="php-quote">'/'</span>.<span class="php-var">$method</span>.<span class="php-quote">'.json'</span>;
+</span><span id="57" class="l"><a href="#57">57: </a>        <span class="php-var">$json_data</span> = <span class="php-keyword2">json_encode</span>(<span class="php-var">$args</span>);
+</span><span id="58" class="l"><a href="#58">58: </a>
+</span><span id="59" class="l"><a href="#59">59: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">function_exists</span>(<span class="php-quote">'curl_init'</span>) &amp;&amp; <span class="php-keyword2">function_exists</span>(<span class="php-quote">'curl_setopt'</span>)){
+</span><span id="60" class="l"><a href="#60">60: </a>            <span class="php-var">$ch</span> = <span class="php-keyword2">curl_init</span>();
+</span><span id="61" class="l"><a href="#61">61: </a>            <span class="php-keyword2">curl_setopt</span>(<span class="php-var">$ch</span>, CURLOPT_URL, <span class="php-var">$url</span>);
+</span><span id="62" class="l"><a href="#62">62: </a>            <span class="php-keyword2">curl_setopt</span>(<span class="php-var">$ch</span>, CURLOPT_HTTPHEADER, <span class="php-keyword1">array</span>(<span class="php-quote">'Content-Type: application/json'</span>));
+</span><span id="63" class="l"><a href="#63">63: </a>            <span class="php-keyword2">curl_setopt</span>(<span class="php-var">$ch</span>, CURLOPT_USERAGENT, <span class="php-quote">'PHP-MCAPI/2.0'</span>);       
+</span><span id="64" class="l"><a href="#64">64: </a>            <span class="php-keyword2">curl_setopt</span>(<span class="php-var">$ch</span>, CURLOPT_RETURNTRANSFER, <span class="php-keyword1">true</span>);
+</span><span id="65" class="l"><a href="#65">65: </a>            <span class="php-keyword2">curl_setopt</span>(<span class="php-var">$ch</span>, CURLOPT_TIMEOUT, <span class="php-var">$timeout</span>);
+</span><span id="66" class="l"><a href="#66">66: </a>            <span class="php-keyword2">curl_setopt</span>(<span class="php-var">$ch</span>, CURLOPT_POST, <span class="php-keyword1">true</span>);
+</span><span id="67" class="l"><a href="#67">67: </a>            <span class="php-keyword2">curl_setopt</span>(<span class="php-var">$ch</span>, CURLOPT_SSL_VERIFYPEER, <span class="php-var">$this</span>-&gt;verify_ssl);
+</span><span id="68" class="l"><a href="#68">68: </a>            <span class="php-keyword2">curl_setopt</span>(<span class="php-var">$ch</span>, CURLOPT_POSTFIELDS, <span class="php-var">$json_data</span>);
+</span><span id="69" class="l"><a href="#69">69: </a>            
+</span><span id="70" class="l"><a href="#70">70: </a>            <span class="php-var">$result</span> = <span class="php-keyword2">curl_exec</span>(<span class="php-var">$ch</span>);
+</span><span id="71" class="l"><a href="#71">71: </a>            <span class="php-keyword2">curl_close</span>(<span class="php-var">$ch</span>);
+</span><span id="72" class="l"><a href="#72">72: </a>        } <span class="php-keyword1">else</span> {
+</span><span id="73" class="l"><a href="#73">73: </a>            <span class="php-var">$result</span>    = <span class="php-keyword2">file_get_contents</span>(<span class="php-var">$url</span>, <span class="php-keyword1">null</span>, <span class="php-keyword2">stream_context_create</span>(<span class="php-keyword1">array</span>(
+</span><span id="74" class="l"><a href="#74">74: </a>                <span class="php-quote">'http'</span> =&gt; <span class="php-keyword1">array</span>(
+</span><span id="75" class="l"><a href="#75">75: </a>                    <span class="php-quote">'protocol_version'</span> =&gt; <span class="php-num">1.1</span>,
+</span><span id="76" class="l"><a href="#76">76: </a>                    <span class="php-quote">'user_agent'</span>       =&gt; <span class="php-quote">'PHP-MCAPI/2.0'</span>,
+</span><span id="77" class="l"><a href="#77">77: </a>                    <span class="php-quote">'method'</span>           =&gt; <span class="php-quote">'POST'</span>,
+</span><span id="78" class="l"><a href="#78">78: </a>                    <span class="php-quote">'header'</span>           =&gt; <span class="php-quote">&quot;Content-type: application/json\r\n&quot;</span>.
+</span><span id="79" class="l"><a href="#79">79: </a>                                          <span class="php-quote">&quot;Connection: close\r\n&quot;</span> .
+</span><span id="80" class="l"><a href="#80">80: </a>                                          <span class="php-quote">&quot;Content-length: &quot;</span> . <span class="php-keyword2">strlen</span>(<span class="php-var">$json_data</span>) . <span class="php-quote">&quot;\r\n&quot;</span>,
+</span><span id="81" class="l"><a href="#81">81: </a>                    <span class="php-quote">'content'</span>          =&gt; <span class="php-var">$json_data</span>,
+</span><span id="82" class="l"><a href="#82">82: </a>                ),
+</span><span id="83" class="l"><a href="#83">83: </a>            )));
+</span><span id="84" class="l"><a href="#84">84: </a>        }
+</span><span id="85" class="l"><a href="#85">85: </a>
+</span><span id="86" class="l"><a href="#86">86: </a>        <span class="php-keyword1">return</span> <span class="php-var">$result</span> ? <span class="php-keyword2">json_decode</span>(<span class="php-var">$result</span>, <span class="php-keyword1">true</span>) : <span class="php-keyword1">false</span>;
+</span><span id="87" class="l"><a href="#87">87: </a>    }
+</span><span id="88" class="l"><a href="#88">88: </a>}</span></code></pre>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?596d44b731e8d23548d917570a211fecf14c9c74"></script>
+<script src="elementlist.js?c0e7bbb8298fb60453cb2831960871c51348852f"></script>
+</body>
+</html>

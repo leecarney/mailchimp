@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Interface IBase\DAO\DAOMailingListInterface</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-Drewm.html">
+						Drewm					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-IBase.html">
+						IBase<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-IBase.DAO.html">
+						DAO					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-IBase.DAO.DAOFactory.html">DAOFactory</a></li>
+				<li><a href="class-IBase.DAO.DAOMailingListMailChimp.html">DAOMailingListMailChimp</a></li>
+				<li><a href="class-IBase.DAO.DAOSubscriberMsSQL.html">DAOSubscriberMsSQL</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-IBase.DAO.DAOMailingListInterface.html">DAOMailingListInterface</a></li>
+				<li><a href="class-IBase.DAO.DAOSubscriberInterface.html">DAOSubscriberInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-IBase.DAO.html" title="Summary of IBase\DAO"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface DAOMailingListInterface</h1>
+
+
+	<div class="description">
+	<p>This interface defines our use-cases for a mailing list DAO. All implementing
+classes need to define the methods below and make sure they return the same types</p>
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-IBase.DAO.DAOMailingListMailChimp.html">IBase\DAO\DAOMailingListMailChimp</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-IBase.html">IBase</a>\<a href="namespace-IBase.DAO.html">DAO</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-IBase.DAO.DAOMailingListInterface.html#6-31" title="Go to source code">libs/IBase/DAO/DAOMailingListInterface.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="subscribe" id="_subscribe">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_subscribe">#</a>
+		<code><a href="source-class-IBase.DAO.DAOMailingListInterface.html#11-17" title="Go to source code">subscribe</a>( <span><code><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a></code> <var>$sub</var></span>, <span> <var>$listId</var></span> )</code>
+
+		<div class="description short">
+			<p>Subscribes a Subscriber object to a mailing list with the given id</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Subscribes a Subscriber object to a mailing list with the given id</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sub</var></dt>
+					<dd>subscriber object</dd>
+					<dt><var>$listId</var></dt>
+					<dd>unique identifier for the mailing list</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The unique identifier for the subscription, null if the subscription failed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMembersList" id="_getMembersList">
+
+		<td class="attributes"><code>
+			 public 
+
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMembersList">#</a>
+		<code><a href="source-class-IBase.DAO.DAOMailingListInterface.html#18-24" title="Go to source code">getMembersList</a>( <span> <var>$listId</var></span>, <span> <var>$status</var></span> )</code>
+
+		<div class="description short">
+			<p>Retrieves a list of the subscribers to the given mailing list</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieves a list of the subscribers to the given mailing list</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$listId</var></dt>
+					<dd>mailing list id</dd>
+					<dt><var>$status</var></dt>
+					<dd>status of the members</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string[]<br>An Array of email addresses matching the criterias
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOpenedReport" id="_getOpenedReport">
+
+		<td class="attributes"><code>
+			 public 
+
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOpenedReport">#</a>
+		<code><a href="source-class-IBase.DAO.DAOMailingListInterface.html#25-30" title="Go to source code">getOpenedReport</a>( <span> <var>$campaignId</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the report for the opened emails.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the report for the opened emails.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$campaignId</var></dt>
+					<dd>email campaign id</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string[]<br>An Array of email addresses that have opened the given campaignId
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

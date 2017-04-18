@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class IBase\DAO\DAOSubscriberMsSQL</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-Drewm.html">
+						Drewm					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-IBase.html">
+						IBase<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-IBase.DAO.html">
+						DAO					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-IBase.DAO.DAOFactory.html">DAOFactory</a></li>
+				<li><a href="class-IBase.DAO.DAOMailingListMailChimp.html">DAOMailingListMailChimp</a></li>
+				<li class="active"><a href="class-IBase.DAO.DAOSubscriberMsSQL.html">DAOSubscriberMsSQL</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-IBase.DAO.DAOMailingListInterface.html">DAOMailingListInterface</a></li>
+				<li><a href="class-IBase.DAO.DAOSubscriberInterface.html">DAOSubscriberInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-IBase.DAO.html" title="Summary of IBase\DAO"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class DAOSubscriberMsSQL</h1>
+
+
+	<div class="description">
+	<p>An implementation for the DAOSubscriberInterface that support SQL.</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>IBase\DAO\DAOSubscriberMsSQL</span></b>			
+			 implements 
+				<a href="class-IBase.DAO.DAOSubscriberInterface.html"><span>IBase\DAO\DAOSubscriberInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-IBase.html">IBase</a>\<a href="namespace-IBase.DAO.html">DAO</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-IBase.DAO.DAOSubscriberMsSQL.html#6-239" title="Go to source code">libs/IBase/DAO/DAOSubscriberMsSQL.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-IBase.DAO.DAOSubscriberMsSQL.html#40-46" title="Go to source code">__construct</a>( <span> <var>$config</var></span> )</code>
+
+		<div class="description short">
+			<p>Default constructor that recieves the $config array form the main script. It uses
+the config to load the database odbc connection string, username and password.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Default constructor that recieves the $config array form the main script. It uses
+the config to load the database odbc connection string, username and password.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findSubscriberById" id="_findSubscriberById">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findSubscriberById">#</a>
+		<code><a href="source-class-IBase.DAO.DAOSubscriberMsSQL.html#48-67" title="Go to source code">findSubscriberById</a>( <span> <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Find a single subscriber by id</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Find a single subscriber by id</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd>unique identifier for the subscriber</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a></code>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IBase.DAO.DAOSubscriberInterface.html#_findSubscriberById">IBase\DAO\DAOSubscriberInterface::findSubscriberById()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findSubscriberByEmail" id="_findSubscriberByEmail">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findSubscriberByEmail">#</a>
+		<code><a href="source-class-IBase.DAO.DAOSubscriberMsSQL.html#69-83" title="Go to source code">findSubscriberByEmail</a>( <span> <var>$email</var></span> )</code>
+
+		<div class="description short">
+			<p>Finds a single subscriber by email address</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Finds a single subscriber by email address</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$email</var></dt>
+					<dd>email address</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a></code>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IBase.DAO.DAOSubscriberInterface.html#_findSubscriberByEmail">IBase\DAO\DAOSubscriberInterface::findSubscriberByEmail()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findSubscribers" id="_findSubscribers">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findSubscribers">#</a>
+		<code><a href="source-class-IBase.DAO.DAOSubscriberMsSQL.html#85-104" title="Go to source code">findSubscribers</a>( <span> <var>$conditions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Finds all subscribers matching the conditions passed as an associative array</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Finds all subscribers matching the conditions passed as an associative array</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$conditions</var></dt>
+					<dd>associative array of conditions (FieldName => Value)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a>[]</code>
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IBase.DAO.DAOSubscriberInterface.html#_findSubscribers">IBase\DAO\DAOSubscriberInterface::findSubscribers()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateSubscriber" id="_updateSubscriber">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateSubscriber">#</a>
+		<code><a href="source-class-IBase.DAO.DAOSubscriberMsSQL.html#106-124" title="Go to source code">updateSubscriber</a>( <span><code><a href="class-IBase.Model.Subscriber.html">IBase\Model\Subscriber</a></code> <var>$sub</var></span> )</code>
+
+		<div class="description short">
+			<p>Updates all fields in the given Subscriber object</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Updates all fields in the given Subscriber object</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sub</var></dt>
+					<dd>\IBase\Model\Subscriber object populated with the information to be updated</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>The number of rows updated
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IBase.DAO.DAOSubscriberInterface.html#_updateSubscriber">IBase\DAO\DAOSubscriberInterface::updateSubscriber()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateAllSubscribers" id="_updateAllSubscribers">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateAllSubscribers">#</a>
+		<code><a href="source-class-IBase.DAO.DAOSubscriberMsSQL.html#126-148" title="Go to source code">updateAllSubscribers</a>( <span> <var>$fields</var></span>, <span> <var>$conditions</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Runs an update statement on the table for all subscribers matching the given conditions.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Runs an update statement on the table for all subscribers matching the given conditions.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fields</var></dt>
+					<dd>parameters should contain an associative array of fieldName => fieldValue</dd>
+					<dt><var>$conditions</var></dt>
+					<dd>associative array of "AND" conditions for the update</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer<br>The number of rows update
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-IBase.DAO.DAOSubscriberInterface.html#_updateAllSubscribers">IBase\DAO\DAOSubscriberInterface::updateAllSubscribers()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class POP3</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-Drewm.html">
+						Drewm					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.html">
+						IBase<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-IBase.DAO.html">
+						DAO					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-EasyPeasyICS.html">EasyPeasyICS</a></li>
+				<li><a href="class-ntlm_sasl_client_class.html">ntlm_sasl_client_class</a></li>
+				<li><a href="class-PHPMailer.html">PHPMailer</a></li>
+				<li><a href="class-PHPMailerLangTest.html">PHPMailerLangTest</a></li>
+				<li><a href="class-PHPMailerTest.html">PHPMailerTest</a></li>
+				<li class="active"><a href="class-POP3.html">POP3</a></li>
+				<li><a href="class-SMTP.html">SMTP</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-phpmailerException.html">phpmailerException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-__autoload.html">__autoload</a></li>
+				<li><a href="function-callbackAction.html">callbackAction</a></li>
+				<li><a href="function-cleanEmails.html">cleanEmails</a></li>
+				<li><a href="function-HTMLFilter.html">HTMLFilter</a></li>
+				<li><a href="function-ibaseAutoload.html" class="invalid">ibaseAutoload</a></li>
+				<li><a href="function-PHPMailerAutoload.html">PHPMailerAutoload</a></li>
+				<li><a href="function-sendEmail.html">sendEmail</a></li>
+				<li><a href="function-tln_body2div.html">tln_body2div</a></li>
+				<li><a href="function-tln_casenormalize.html">tln_casenormalize</a></li>
+				<li><a href="function-tln_deent.html">tln_deent</a></li>
+				<li><a href="function-tln_defang.html">tln_defang</a></li>
+				<li><a href="function-tln_findnxreg.html">tln_findnxreg</a></li>
+				<li><a href="function-tln_findnxstr.html">tln_findnxstr</a></li>
+				<li><a href="function-tln_fixatts.html">tln_fixatts</a></li>
+				<li><a href="function-tln_fixstyle.html">tln_fixstyle</a></li>
+				<li><a href="function-tln_fixurl.html">tln_fixurl</a></li>
+				<li><a href="function-tln_getnxtag.html">tln_getnxtag</a></li>
+				<li><a href="function-tln_sanitize.html">tln_sanitize</a></li>
+				<li><a href="function-tln_skipspace.html">tln_skipspace</a></li>
+				<li><a href="function-tln_tagprint.html">tln_tagprint</a></li>
+				<li><a href="function-tln_unspace.html">tln_unspace</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class POP3</h1>
+
+
+	<div class="description">
+	<p>PHPMailer POP-Before-SMTP Authentication Class.
+Specifically for PHPMailer to use for RFC1939 POP-before-SMTP authentication.
+Does not support APOP.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> PHPMailer<br>
+
+				<b>Copyright:</b>
+				2012 - 2014 Marcus Bointon<br>
+				<b>Copyright:</b>
+				2010 - 2012 Jim Jagielski<br>
+				<b>Copyright:</b>
+				2004 - 2009 Andy Prevost<br>
+				<b>License:</b>
+				<a href="http://www.gnu.org/copyleft/lesser.html">GNU Lesser General Public License</a><br>
+				<b>Author:</b>
+				Richard Davey (original author) <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#x72;&#105;&#x63;&#104;&#x40;&#99;&#x6f;&#114;&#101;&#x70;&#104;&#x70;&#46;&#x63;&#111;&#46;&#x75;&#107;">&#x72;&#105;&#x63;&#104;&#x40;&#99;&#x6f;&#114;&#101;&#x70;&#104;&#x70;&#46;&#x63;&#111;&#46;&#x75;&#107;</a><br>
+				<b>Author:</b>
+				Marcus Bointon (Synchro/coolbru) <a href="&#109;&#97;&#105;&#x6c;&#x74;o&#58;&#112;&#104;&#x70;&#x6d;a&#105;&#108;&#101;&#x72;&#x40;s&#121;&#110;&#x63;&#x68;&#x72;o&#109;&#101;&#x64;&#x69;&#x61;&#46;&#99;&#111;&#x2e;&#x75;&#x6b;">&#112;&#104;&#x70;&#x6d;a&#105;&#108;&#101;&#x72;&#x40;s&#121;&#110;&#x63;&#x68;&#x72;o&#109;&#101;&#x64;&#x69;&#x61;&#46;&#99;&#111;&#x2e;&#x75;&#x6b;</a><br>
+				<b>Author:</b>
+				Jim Jagielski (jimjag) <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6a;&#105;&#109;&#x6a;&#x61;&#103;&#64;&#x67;&#x6d;a&#105;&#x6c;&#x2e;c&#111;&#109;">&#x6a;&#105;&#109;&#x6a;&#x61;&#103;&#64;&#x67;&#x6d;a&#105;&#x6c;&#x2e;c&#111;&#109;</a><br>
+				<b>Author:</b>
+				Andy Prevost (codeworxtech) <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x63;o&#100;&#x65;&#119;&#x6f;&#114;&#x78;&#116;&#x65;&#99;&#104;&#x40;&#117;&#x73;&#101;&#x72;&#115;&#x2e;&#115;&#x6f;u&#114;&#x63;&#101;&#x66;&#111;&#x72;&#103;&#x65;&#46;&#110;&#x65;&#116;">&#x63;o&#100;&#x65;&#119;&#x6f;&#114;&#x78;&#116;&#x65;&#99;&#104;&#x40;&#117;&#x73;&#101;&#x72;&#115;&#x2e;&#115;&#x6f;u&#114;&#x63;&#101;&#x66;&#111;&#x72;&#103;&#x65;&#46;&#110;&#x65;&#116;</a><br>
+			<b>Located at</b> <a href="source-class-POP3.html#20-397" title="Go to source code">libs/PHPMailer/class.pop3.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="popBeforeSmtp" id="_popBeforeSmtp">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_popBeforeSmtp">#</a>
+		<code><a href="source-class-POP3.html#130-150" title="Go to source code">popBeforeSmtp</a>( <span> <var>$host</var></span>, <span>boolean <var>$port</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$tval</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$username</var> = <span class="php-quote">''</span></span>, <span>string <var>$password</var> = <span class="php-quote">''</span></span>, <span>integer <var>$debug_level</var> = <span class="php-num">0</span> </span> )</code>
+
+		<div class="description short">
+			<p>Simple static wrapper for all-in-one POP before SMTP</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Simple static wrapper for all-in-one POP before SMTP</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$host</var></dt>
+					<dd></dd>
+					<dt><var>$port</var></dt>
+					<dd></dd>
+					<dt><var>$tval</var></dt>
+					<dd></dd>
+					<dt><var>$username</var></dt>
+					<dd></dd>
+					<dt><var>$password</var></dt>
+					<dd></dd>
+					<dt><var>$debug_level</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="authorise" id="_authorise">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_authorise">#</a>
+		<code><a href="source-class-POP3.html#152-197" title="Go to source code">authorise</a>( <span>string <var>$host</var></span>, <span>integer|boolean <var>$port</var> = <span class="php-keyword1">false</span></span>, <span>integer|boolean <var>$timeout</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$username</var> = <span class="php-quote">''</span></span>, <span>string <var>$password</var> = <span class="php-quote">''</span></span>, <span>integer <var>$debug_level</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Authenticate with a POP3 server.
+A connect, login, disconnect sequence
+appropriate for POP-before SMTP authorisation.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Authenticate with a POP3 server.
+A connect, login, disconnect sequence
+appropriate for POP-before SMTP authorisation.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$host</var></dt>
+					<dd>The hostname to connect to</dd>
+					<dt><var>$port</var></dt>
+					<dd>The port number to connect to</dd>
+					<dt><var>$timeout</var></dt>
+					<dd>The timeout value</dd>
+					<dt><var>$username</var></dt>
+					<dd></dd>
+					<dt><var>$password</var></dt>
+					<dd></dd>
+					<dt><var>$debug_level</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="connect" id="_connect">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_connect">#</a>
+		<code><a href="source-class-POP3.html#199-256" title="Go to source code">connect</a>( <span>string <var>$host</var></span>, <span>integer|boolean <var>$port</var> = <span class="php-keyword1">false</span></span>, <span>integer <var>$tval</var> = <span class="php-num">30</span></span> )</code>
+
+		<div class="description short">
+			<p>Connect to a POP3 server.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Connect to a POP3 server.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$host</var></dt>
+					<dd></dd>
+					<dt><var>$port</var></dt>
+					<dd></dd>
+					<dt><var>$tval</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="login" id="_login">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_login">#</a>
+		<code><a href="source-class-POP3.html#258-290" title="Go to source code">login</a>( <span>string <var>$username</var> = <span class="php-quote">''</span></span>, <span>string <var>$password</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Log in to the POP3 server.
+Does not support APOP (RFC 2828, 4949).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Log in to the POP3 server.
+Does not support APOP (RFC 2828, 4949).</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$username</var></dt>
+					<dd></dd>
+					<dt><var>$password</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="disconnect" id="_disconnect">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_disconnect">#</a>
+		<code><a href="source-class-POP3.html#292-306" title="Go to source code">disconnect</a>( )</code>
+
+		<div class="description short">
+			<p>Disconnect from the POP3 server.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Disconnect from the POP3 server.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="CRLF" id="CRLF">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-POP3.html#125-128" title="Go to source code"><b>CRLF</b></a>
+			</code>
+
+			<div class="description short">
+				<p>Line break constant</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Line break constant</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#CRLF" class="anchor">#</a>
+				<code><span class="php-quote">&quot;\r\n&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="Version" id="$Version">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#32-37" title="Go to source code"><var>$Version</var></a>
+
+			<div class="description short">
+				<p>The POP3 PHPMailer Version number.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The POP3 PHPMailer Version number.</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							string<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Version" class="anchor">#</a>
+				<code><span class="php-quote">'5.2.9'</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="POP3_PORT" id="$POP3_PORT">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#39-44" title="Go to source code"><var>$POP3_PORT</var></a>
+
+			<div class="description short">
+				<p>Default POP3 port number.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Default POP3 port number.</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							integer<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$POP3_PORT" class="anchor">#</a>
+				<code><span class="php-num">110</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="POP3_TIMEOUT" id="$POP3_TIMEOUT">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#46-51" title="Go to source code"><var>$POP3_TIMEOUT</var></a>
+
+			<div class="description short">
+				<p>Default timeout in seconds.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Default timeout in seconds.</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							integer<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$POP3_TIMEOUT" class="anchor">#</a>
+				<code><span class="php-num">30</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="CRLF" id="$CRLF">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#53-59" title="Go to source code"><var>$CRLF</var></a>
+
+			<div class="description short">
+				<p>POP3 Carriage Return + Line Feed.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>POP3 Carriage Return + Line Feed.</p>
+
+					<h4>Deprecated</h4>
+					<div class="list">
+							Use the constant instead<br>
+					</div>
+					<h4>Type</h4>
+					<div class="list">
+							string<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$CRLF" class="anchor">#</a>
+				<code><span class="php-quote">&quot;\r\n&quot;</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="do_debug" id="$do_debug">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#61-67" title="Go to source code"><var>$do_debug</var></a>
+
+			<div class="description short">
+				<p>Debug display level.
+Options: 0 = no, 1+ = yes</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Debug display level.
+Options: 0 = no, 1+ = yes</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							integer<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$do_debug" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="host" id="$host">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#69-74" title="Go to source code"><var>$host</var></a>
+
+			<div class="description short">
+				<p>POP3 mail server hostname.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>POP3 mail server hostname.</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							string<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$host" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="port" id="$port">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#76-81" title="Go to source code"><var>$port</var></a>
+
+			<div class="description short">
+				<p>POP3 port number.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>POP3 port number.</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							integer<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$port" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="tval" id="$tval">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#83-88" title="Go to source code"><var>$tval</var></a>
+
+			<div class="description short">
+				<p>POP3 Timeout Value in seconds.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>POP3 Timeout Value in seconds.</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							integer<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$tval" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="username" id="$username">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#90-95" title="Go to source code"><var>$username</var></a>
+
+			<div class="description short">
+				<p>POP3 username</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>POP3 username</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							string<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$username" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="password" id="$password">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-POP3.html#97-102" title="Go to source code"><var>$password</var></a>
+
+			<div class="description short">
+				<p>POP3 password.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>POP3 password.</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							string<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$password" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

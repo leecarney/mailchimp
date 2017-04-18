@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Drewm\MailChimp</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Drewm.html">
+						Drewm					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.html">
+						IBase<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-IBase.DAO.html">
+						DAO					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Drewm.MailChimp.html">MailChimp</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Drewm.html" title="Summary of Drewm"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class MailChimp</h1>
+
+
+	<div class="description">
+	<p>Super-simple, minimum abstraction MailChimp API v2 wrapper</p>
+
+<p>Uses curl if available, falls back to file_get_contents and HTTP stream.
+This probably has more comments than code.</p>
+
+<p>Contributors:
+Michael Minor <a href="&#109;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#x6d;&#x65;&#64;&#112;&#105;&#120;&#101;&#x6c;&#x62;&#x61;&#x63;o&#110;&#46;&#99;&#111;&#x6d;">&#x6d;&#x65;&#64;&#112;&#105;&#120;&#101;&#x6c;&#x62;&#x61;&#x63;o&#110;&#46;&#99;&#111;&#x6d;</a>
+Lorna Jane Mitchell, github.com/lornajane</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Drewm.html">Drewm</a><br>
+		
+
+				<b>Author:</b>
+				Drew McLellan <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x64;r&#101;&#x77;&#46;&#x6d;&#99;&#x6c;&#101;&#x6c;&#108;&#97;&#x6e;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#x63;o&#109;">&#x64;r&#101;&#x77;&#46;&#x6d;&#99;&#x6c;&#101;&#x6c;&#108;&#97;&#x6e;&#64;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#x63;o&#109;</a><br>
+				<b>Version:</b>
+				1.1.1<br>
+			<b>Located at</b> <a href="source-class-Drewm.MailChimp.html#5-88" title="Go to source code">libs/Drewm/MailChimp.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Drewm.MailChimp.html#24-33" title="Go to source code">__construct</a>( <span>string <var>$api_key</var></span> )</code>
+
+		<div class="description short">
+			<p>Create a new instance</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a new instance</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$api_key</var></dt>
+					<dd>Your MailChimp API key</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="call" id="_call">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_call">#</a>
+		<code><a href="source-class-Drewm.MailChimp.html#35-44" title="Go to source code">call</a>( <span>string <var>$method</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">array</span>()</span>, <span> <var>$timeout</var> = <span class="php-num">10</span></span> )</code>
+
+		<div class="description short">
+			<p>Call an API method. Every request needs the API key, so that is added automatically -- you don't need to pass it in.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Call an API method. Every request needs the API key, so that is added automatically -- you don't need to pass it in.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$method</var></dt>
+					<dd>The API method to call, e.g. 'lists/list'</dd>
+					<dt><var>$args</var></dt>
+					<dd>An array of arguments to pass to the method. Will be json-encoded for you.</dd>
+					<dt><var>$timeout</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>Associative array of json decoded API response.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

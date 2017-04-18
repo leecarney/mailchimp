@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PHPMailerTest</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-Drewm.html">
+						Drewm					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.html">
+						IBase<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-IBase.DAO.html">
+						DAO					</a>
+
+						</li>
+				<li>
+					<a href="namespace-IBase.Model.html">
+						Model					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-EasyPeasyICS.html">EasyPeasyICS</a></li>
+				<li><a href="class-ntlm_sasl_client_class.html">ntlm_sasl_client_class</a></li>
+				<li><a href="class-PHPMailer.html">PHPMailer</a></li>
+				<li><a href="class-PHPMailerLangTest.html">PHPMailerLangTest</a></li>
+				<li class="active"><a href="class-PHPMailerTest.html">PHPMailerTest</a></li>
+				<li><a href="class-POP3.html">POP3</a></li>
+				<li><a href="class-SMTP.html">SMTP</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-phpmailerException.html">phpmailerException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-__autoload.html">__autoload</a></li>
+				<li><a href="function-callbackAction.html">callbackAction</a></li>
+				<li><a href="function-cleanEmails.html">cleanEmails</a></li>
+				<li><a href="function-HTMLFilter.html">HTMLFilter</a></li>
+				<li><a href="function-ibaseAutoload.html" class="invalid">ibaseAutoload</a></li>
+				<li><a href="function-PHPMailerAutoload.html">PHPMailerAutoload</a></li>
+				<li><a href="function-sendEmail.html">sendEmail</a></li>
+				<li><a href="function-tln_body2div.html">tln_body2div</a></li>
+				<li><a href="function-tln_casenormalize.html">tln_casenormalize</a></li>
+				<li><a href="function-tln_deent.html">tln_deent</a></li>
+				<li><a href="function-tln_defang.html">tln_defang</a></li>
+				<li><a href="function-tln_findnxreg.html">tln_findnxreg</a></li>
+				<li><a href="function-tln_findnxstr.html">tln_findnxstr</a></li>
+				<li><a href="function-tln_fixatts.html">tln_fixatts</a></li>
+				<li><a href="function-tln_fixstyle.html">tln_fixstyle</a></li>
+				<li><a href="function-tln_fixurl.html">tln_fixurl</a></li>
+				<li><a href="function-tln_getnxtag.html">tln_getnxtag</a></li>
+				<li><a href="function-tln_sanitize.html">tln_sanitize</a></li>
+				<li><a href="function-tln_skipspace.html">tln_skipspace</a></li>
+				<li><a href="function-tln_tagprint.html">tln_tagprint</a></li>
+				<li><a href="function-tln_unspace.html">tln_unspace</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class PHPMailerTest</h1>
+
+
+	<div class="description">
+	<p>PHPMailer - PHP email transport unit test class
+Performs authentication tests</p>
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+PHPUnit_Framework_TestCase
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>PHPMailerTest</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> PHPMailer<br>
+
+				<b>Copyright:</b>
+				2004 - 2009 Andy Prevost<br>
+				<b>Copyright:</b>
+				2010 Marcus Bointon<br>
+				<b>License:</b>
+				<a href="http://www.gnu.org/copyleft/lesser.html">GNU Lesser General Public License</a><br>
+				<b>Author:</b>
+				Andy Prevost<br>
+				<b>Author:</b>
+				Marcus Bointon <a href="&#109;&#97;&#105;&#x6c;&#x74;o&#58;&#112;&#104;&#x70;&#x6d;a&#105;&#108;&#101;&#x72;&#x40;s&#121;&#110;&#x63;&#x68;&#x72;o&#109;&#101;&#x64;&#x69;&#x61;&#46;&#99;&#111;&#x2e;&#x75;&#x6b;">&#112;&#104;&#x70;&#x6d;a&#105;&#108;&#101;&#x72;&#x40;s&#121;&#110;&#x63;&#x68;&#x72;o&#109;&#101;&#x64;&#x69;&#x61;&#46;&#99;&#111;&#x2e;&#x75;&#x6b;</a><br>
+			<b>Located at</b> <a href="source-class-PHPMailerTest.html#18-1473" title="Go to source code">libs/PHPMailer/test/phpmailerTest.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="setUp" id="_setUp">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setUp">#</a>
+		<code><a href="source-class-PHPMailerTest.html#65-118" title="Go to source code">setUp</a>( )</code>
+
+		<div class="description short">
+			<p>Run before each test is started.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Run before each test is started.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="tearDown" id="_tearDown">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_tearDown">#</a>
+		<code><a href="source-class-PHPMailerTest.html#120-134" title="Go to source code">tearDown</a>( )</code>
+
+		<div class="description short">
+			<p>Run after each test is completed.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Run after each test is completed.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildBody" id="_buildBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildBody">#</a>
+		<code><a href="source-class-PHPMailerTest.html#137-212" title="Go to source code">buildBody</a>( )</code>
+
+		<div class="description short">
+			<p>Build the body of the message in the appropriate format.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Build the body of the message in the appropriate format.</p>
+
+
+
+
+
+				<h4>Private</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkChanges" id="_checkChanges">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkChanges">#</a>
+		<code><a href="source-class-PHPMailerTest.html#214-248" title="Go to source code">checkChanges</a>( )</code>
+
+		<div class="description short">
+			<p>Check which default settings have been changed for the report.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check which default settings have been changed for the report.</p>
+
+
+
+
+
+				<h4>Private</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addChange" id="_addChange">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addChange">#</a>
+		<code><a href="source-class-PHPMailerTest.html#250-260" title="Go to source code">addChange</a>( <span>string <var>$sName</var></span>, <span>string <var>$sNewValue</var></span> )</code>
+
+		<div class="description short">
+			<p>Add a changelog entry.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Add a changelog entry.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sName</var></dt>
+					<dd></dd>
+					<dt><var>$sNewValue</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addNote" id="_addNote">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addNote">#</a>
+		<code><a href="source-class-PHPMailerTest.html#262-271" title="Go to source code">addNote</a>( <span>string <var>$sValue</var></span> )</code>
+
+		<div class="description short">
+			<p>Adds a simple note to the message.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds a simple note to the message.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sValue</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+				<h4>Public</h4>
+				<div class="list">
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAddress" id="_setAddress">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAddress">#</a>
+		<code><a href="source-class-PHPMailerTest.html#273-292" title="Go to source code">setAddress</a>( <span>string <var>$sAddress</var></span>, <span>string <var>$sName</var> = <span class="php-quote">''</span></span>, <span>string <var>$sType</var> = <span class="php-quote">'to'</span></span> )</code>
+
+		<div class="description short">
+			<p>Adds all of the addresses</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds all of the addresses</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sAddress</var></dt>
+					<dd></dd>
+					<dt><var>$sName</var></dt>
+					<dd></dd>
+					<dt><var>$sType</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testBootstrap" id="_testBootstrap">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testBootstrap">#</a>
+		<code><a href="source-class-PHPMailerTest.html#294-304" title="Go to source code">testBootstrap</a>( )</code>
+
+		<div class="description short">
+			<p>Check that we have loaded default test params.
+Pretty much everything will fail due to unset recipient if this is not done.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check that we have loaded default test params.
+Pretty much everything will fail due to unset recipient if this is not done.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAuthCRAMMD5" id="_testAuthCRAMMD5">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAuthCRAMMD5">#</a>
+		<code><a href="source-class-PHPMailerTest.html#306-326" title="Go to source code">testAuthCRAMMD5</a>( )</code>
+
+		<div class="description short">
+			<p>Test CRAM-MD5 authentication.
+Needs a connection to a server that supports this auth mechanism, so commented out by default</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test CRAM-MD5 authentication.
+Needs a connection to a server that supports this auth mechanism, so commented out by default</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testValidate" id="_testValidate">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testValidate">#</a>
+		<code><a href="source-class-PHPMailerTest.html#328-646" title="Go to source code">testValidate</a>( )</code>
+
+		<div class="description short">
+			<p>Test email address validation.
+Test addresses obtained from http://isemail.info
+Some failing cases commented out that are apparently up for debate!</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test email address validation.
+Test addresses obtained from http://isemail.info
+Some failing cases commented out that are apparently up for debate!</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testWordWrap" id="_testWordWrap">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testWordWrap">#</a>
+		<code><a href="source-class-PHPMailerTest.html#648-668" title="Go to source code">testWordWrap</a>( )</code>
+
+		<div class="description short">
+			<p>Word-wrap an ASCII message.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Word-wrap an ASCII message.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testWordWrapMultibyte" id="_testWordWrapMultibyte">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testWordWrapMultibyte">#</a>
+		<code><a href="source-class-PHPMailerTest.html#670-690" title="Go to source code">testWordWrapMultibyte</a>( )</code>
+
+		<div class="description short">
+			<p>Word-wrap a multibyte message.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Word-wrap a multibyte message.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testLowPriority" id="_testLowPriority">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testLowPriority">#</a>
+		<code><a href="source-class-PHPMailerTest.html#692-705" title="Go to source code">testLowPriority</a>( )</code>
+
+		<div class="description short">
+			<p>Test low priority.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test low priority.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testMultiplePlainFileAttachment" id="_testMultiplePlainFileAttachment">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testMultiplePlainFileAttachment">#</a>
+		<code><a href="source-class-PHPMailerTest.html#707-727" title="Go to source code">testMultiplePlainFileAttachment</a>( )</code>
+
+		<div class="description short">
+			<p>Simple plain file attachment test.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Simple plain file attachment test.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testPlainStringAttachment" id="_testPlainStringAttachment">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testPlainStringAttachment">#</a>
+		<code><a href="source-class-PHPMailerTest.html#729-745" title="Go to source code">testPlainStringAttachment</a>( )</code>
+
+		<div class="description short">
+			<p>Simple plain string attachment test.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Simple plain string attachment test.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testQuotedPrintable" id="_testQuotedPrintable">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testQuotedPrintable">#</a>
+		<code><a href="source-class-PHPMailerTest.html#747-771" title="Go to source code">testQuotedPrintable</a>( )</code>
+
+		<div class="description short">
+			<p>Plain quoted-printable message.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Plain quoted-printable message.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testHtml" id="_testHtml">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testHtml">#</a>
+		<code><a href="source-class-PHPMailerTest.html#773-797" title="Go to source code">testHtml</a>( )</code>
+
+		<div class="description short">
+			<p>Send an HTML message.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send an HTML message.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testMsgHTML" id="_testMsgHTML">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testMsgHTML">#</a>
+		<code><a href="source-class-PHPMailerTest.html#799-825" title="Go to source code">testMsgHTML</a>( )</code>
+
+		<div class="description short">
+			<p>Test simple message builder and html2text converters</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test simple message builder and html2text converters</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testHTMLAttachment" id="_testHTMLAttachment">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testHTMLAttachment">#</a>
+		<code><a href="source-class-PHPMailerTest.html#827-846" title="Go to source code">testHTMLAttachment</a>( )</code>
+
+		<div class="description short">
+			<p>Simple HTML and attachment test</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Simple HTML and attachment test</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testEmbeddedImage" id="_testEmbeddedImage">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testEmbeddedImage">#</a>
+		<code><a href="source-class-PHPMailerTest.html#848-875" title="Go to source code">testEmbeddedImage</a>( )</code>
+
+		<div class="description short">
+			<p>An embedded attachment test.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>An embedded attachment test.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testMultiEmbeddedImage" id="_testMultiEmbeddedImage">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testMultiEmbeddedImage">#</a>
+		<code><a href="source-class-PHPMailerTest.html#877-906" title="Go to source code">testMultiEmbeddedImage</a>( )</code>
+
+		<div class="description short">
+			<p>An embedded attachment test.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>An embedded attachment test.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAltBody" id="_testAltBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAltBody">#</a>
+		<code><a href="source-class-PHPMailerTest.html#908-923" title="Go to source code">testAltBody</a>( )</code>
+
+		<div class="description short">
+			<p>Simple multipart/alternative test.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Simple multipart/alternative test.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAltBodyAttachment" id="_testAltBodyAttachment">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAltBodyAttachment">#</a>
+		<code><a href="source-class-PHPMailerTest.html#925-947" title="Go to source code">testAltBodyAttachment</a>( )</code>
+
+		<div class="description short">
+			<p>Simple HTML and attachment test</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Simple HTML and attachment test</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testIcal" id="_testIcal">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testIcal">#</a>
+		<code><a href="source-class-PHPMailerTest.html#949-1015" title="Go to source code">testIcal</a>( )</code>
+
+		<div class="description short">
+			<p>iCal event test.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>iCal event test.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testMultipleSend" id="_testMultipleSend">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testMultipleSend">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1017-1032" title="Go to source code">testMultipleSend</a>( )</code>
+
+		<div class="description short">
+			<p>Test sending multiple messages with separate connections.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test sending multiple messages with separate connections.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSendmailSend" id="_testSendmailSend">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSendmailSend">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1034-1046" title="Go to source code">testSendmailSend</a>( )</code>
+
+		<div class="description short">
+			<p>Test sending using SendMail.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test sending using SendMail.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testQmailSend" id="_testQmailSend">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testQmailSend">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1048-1065" title="Go to source code">testQmailSend</a>( )</code>
+
+		<div class="description short">
+			<p>Test sending using Qmail.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test sending using Qmail.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testMailSend" id="_testMailSend">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testMailSend">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1067-1082" title="Go to source code">testMailSend</a>( )</code>
+
+		<div class="description short">
+			<p>Test sending using PHP mail() function.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test sending using PHP mail() function.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testEmptyBody" id="_testEmptyBody">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testEmptyBody">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1084-1097" title="Go to source code">testEmptyBody</a>( )</code>
+
+		<div class="description short">
+			<p>Test sending an empty body.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test sending an empty body.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSmtpKeepAlive" id="_testSmtpKeepAlive">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSmtpKeepAlive">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1099-1115" title="Go to source code">testSmtpKeepAlive</a>( )</code>
+
+		<div class="description short">
+			<p>Test keepalive (sending multiple messages in a single connection).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test keepalive (sending multiple messages in a single connection).</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDenialOfServiceAttack" id="_testDenialOfServiceAttack">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDenialOfServiceAttack">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1117-1128" title="Go to source code">testDenialOfServiceAttack</a>( )</code>
+
+		<div class="description short">
+			<p>Tests this denial of service attack:
+   http://www.cybsec.com/vuln/PHPMailer-DOS.pdf</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Tests this denial of service attack: http://www.cybsec.com/vuln/PHPMailer-DOS.pdf</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDenialOfServiceAttack2" id="_testDenialOfServiceAttack2">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDenialOfServiceAttack2">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1130-1141" title="Go to source code">testDenialOfServiceAttack2</a>( )</code>
+
+		<div class="description short">
+			<p>Tests this denial of service attack:
+   https://sourceforge.net/p/phpmailer/bugs/383/
+According to the ticket, this should get stuck in a loop, though I can't make it happen.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Tests this denial of service attack: https://sourceforge.net/p/phpmailer/bugs/383/
+According to the ticket, this should get stuck in a loop, though I can't make it happen.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testError" id="_testError">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testError">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1143-1157" title="Go to source code">testError</a>( )</code>
+
+		<div class="description short">
+			<p>Test error handling.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test error handling.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAddressing" id="_testAddressing">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAddressing">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1159-1188" title="Go to source code">testAddressing</a>( )</code>
+
+		<div class="description short">
+			<p>Test addressing.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test addressing.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAddressEscaping" id="_testAddressEscaping">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAddressEscaping">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1190-1203" title="Go to source code">testAddressEscaping</a>( )</code>
+
+		<div class="description short">
+			<p>Test address escaping.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test address escaping.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testBCCAddressing" id="_testBCCAddressing">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testBCCAddressing">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1205-1215" title="Go to source code">testBCCAddressing</a>( )</code>
+
+		<div class="description short">
+			<p>Test BCC-only addressing.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test BCC-only addressing.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testEncodings" id="_testEncodings">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testEncodings">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1217-1250" title="Go to source code">testEncodings</a>( )</code>
+
+		<div class="description short">
+			<p>Encoding and charset tests.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Encoding and charset tests.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testBase64" id="_testBase64">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testBase64">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1252-1261" title="Go to source code">testBase64</a>( )</code>
+
+		<div class="description short">
+			<p>Test base-64 encoding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test base-64 encoding.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSigning" id="_testSigning">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSigning">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1262-1305" title="Go to source code">testSigning</a>( )</code>
+
+		<div class="description short">
+			<p>S/MIME Signing tests.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>S/MIME Signing tests.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testDKIM" id="_testDKIM">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testDKIM">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1307-1332" title="Go to source code">testDKIM</a>( )</code>
+
+		<div class="description short">
+			<p>DKIM Signing tests.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>DKIM Signing tests.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testLineBreaks" id="_testLineBreaks">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testLineBreaks">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1334-1348" title="Go to source code">testLineBreaks</a>( )</code>
+
+		<div class="description short">
+			<p>Test line break reformatting.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test line break reformatting.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testMessageID" id="_testMessageID">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testMessageID">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1350-1362" title="Go to source code">testMessageID</a>( )</code>
+
+		<div class="description short">
+			<p>Test setting and retrieving message ID.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test setting and retrieving message ID.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testMiscellaneous" id="_testMiscellaneous">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testMiscellaneous">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1364-1404" title="Go to source code">testMiscellaneous</a>( )</code>
+
+		<div class="description short">
+			<p>Miscellaneous calls to improve test coverage and some small tests.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Miscellaneous calls to improve test coverage and some small tests.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testPopBeforeSmtpGood" id="_testPopBeforeSmtpGood">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testPopBeforeSmtpGood">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1406-1425" title="Go to source code">testPopBeforeSmtpGood</a>( )</code>
+
+		<div class="description short">
+			<p>Use a fake POP3 server to test POP-before-SMTP auth.
+With a known-good login</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use a fake POP3 server to test POP-before-SMTP auth.
+With a known-good login</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testPopBeforeSmtpBad" id="_testPopBeforeSmtpBad">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testPopBeforeSmtpBad">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1427-1446" title="Go to source code">testPopBeforeSmtpBad</a>( )</code>
+
+		<div class="description short">
+			<p>Use a fake POP3 server to test POP-before-SMTP auth.
+With a known-bad login</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use a fake POP3 server to test POP-before-SMTP auth.
+With a known-bad login</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSmtpConnect" id="_testSmtpConnect">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSmtpConnect">#</a>
+		<code><a href="source-class-PHPMailerTest.html#1448-1472" title="Go to source code">testSmtpConnect</a>( )</code>
+
+		<div class="description short">
+			<p>Test SMTP host connections.
+This test can take a long time, so run it last</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Test SMTP host connections.
+This test can take a long time, so run it last</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary properties" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="Mail" id="$Mail">
+		<td class="attributes"><code>
+			public  
+			
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailerTest.html#24-29" title="Go to source code"><var>$Mail</var></a>
+
+			<div class="description short">
+				<p>Holds the default phpmailer instance.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Holds the default phpmailer instance.</p>
+
+					<h4>Private</h4>
+					<div class="list">
+					</div>
+					<h4>Type</h4>
+					<div class="list">
+							PHPMailer<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Mail" class="anchor">#</a>
+				<code></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="Host" id="$Host">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailerTest.html#31-36" title="Go to source code"><var>$Host</var></a>
+
+			<div class="description short">
+				<p>Holds the SMTP mail host.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Holds the SMTP mail host.</p>
+
+					<h4>Public</h4>
+					<div class="list">
+					</div>
+					<h4>Type</h4>
+					<div class="list">
+							string<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$Host" class="anchor">#</a>
+				<code><span class="php-quote">''</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ChangeLog" id="$ChangeLog">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailerTest.html#38-43" title="Go to source code"><var>$ChangeLog</var></a>
+
+			<div class="description short">
+				<p>Holds the change log.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Holds the change log.</p>
+
+					<h4>Private</h4>
+					<div class="list">
+					</div>
+					<h4>Type</h4>
+					<div class="list">
+							string[]<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$ChangeLog" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="NoteLog" id="$NoteLog">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailerTest.html#45-50" title="Go to source code"><var>$NoteLog</var></a>
+
+			<div class="description short">
+				<p>Holds the note log.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Holds the note log.</p>
+
+					<h4>Private</h4>
+					<div class="list">
+					</div>
+					<h4>Type</h4>
+					<div class="list">
+							string[]<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$NoteLog" class="anchor">#</a>
+				<code><span class="php-keyword1">array</span>()</code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="INCLUDE_DIR" id="$INCLUDE_DIR">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-PHPMailerTest.html#52-56" title="Go to source code"><var>$INCLUDE_DIR</var></a>
+
+			<div class="description short">
+				<p>Default include path</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Default include path</p>
+
+					<h4>Type</h4>
+					<div class="list">
+							string<br>
+					</div>
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#$INCLUDE_DIR" class="anchor">#</a>
+				<code><span class="php-quote">'../'</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
